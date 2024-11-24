@@ -332,10 +332,6 @@ footer {
         /* border: solid; */
     }
 
-    .vide{
-        display:none;
-    }
-
     #image-apropos {
         /* border: solid; */
         margin-top: 10%;
@@ -347,10 +343,15 @@ footer {
 @media (max-width: 940px) {
     #box-tarifs{
         /* display: contents; */
+        display: grid;
         flex-direction: column;
-        /* border: solid; */
+        border: solid;
+        justify-items: center;
+        justify-content: center;
+    }
 
-        /* justify-content: center; */
+    .vide{
+        display:none;
     }
     
     #box-Depart-Orly{
