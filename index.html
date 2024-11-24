@@ -1,379 +1,295 @@
-/* Styles généraux */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxi Moto - Votre Transport Rapide et Sécurisé</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/coco-gothic" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/catchy-mager?styles=185528" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inter?styles=29135" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/taxi.png" />
+</head>
+<body>
 
-.container{
-    /* border: solid;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; */
-}
+    <!-- En-tête avec la navigation -->
+    <header >
+        <nav>
+            <div class="left-nav">
+                <img src="images/YC.png" alt="logo YC">
+            </div>
+            <div class="right-nav">
+                <a href="#apropos"><img src="images/moto-goldwing-1800.svg" alt="logo moto"></a>
+                <a href="#tarifs"><img src="images/piece-en-euros.png" alt="logo euros"></a>
+                <a href="#contact"><img src="images/whatsapp_noir.png" alt="logo what's app"></a>
+            </div>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+    <!-- Bannière principale -->
+    <!-- <section class="banner">
+        <div class="container">
+            <h2>Déplacez-vous rapidement dans la ville avec nos taxis motos</h2>
+            <a href="#contact" class="btn">Réserver Maintenant</a>
+        </div>
+    </section> -->
 
-/* En-tête */
-nav{
-    /* border: solid; */
-    /* background-color: #f4f1ed; */
-    display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
+    <!-- Section À Propos -->
+    <section id="apropos">
+        <div id="title">
+            <p>À Propos</p>
+        </div>
+        <div class="box">
+            <div id="text-apropos">
+                <p>
+                    Vous avez un avion à attraper ou un train à ne pas manquer? 
+                    Choisissez notre service de taxi moto, équipé du modèle Honda Goldwing Touring, 
+                    pour assurer un départ ponctuel ou éviter toute attente à votre arrivée, 
+                    même depuis les gares situées au cœur de Paris. 
+                    Profitez du confort et de la rapidité de nos trajets, 
+                    conçus pour vous faire gagner un temps précieux 
+                    tout en vous garantissant une sécurité optimale. 
+                </p>
+            </div>
+            <div id="image-apropos">
+                <img src="./images/Gunmetal-Black-Metallic-×-Mat-Morion-Black-Goldwing_dev23.png" alt="image moto" width="100%">
+                <!-- width="525" height="299"> -->
+            </div>
+        </div>
+    </section>
 
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 16px 20px 30px 20px;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease-out; */
-}
+    <!-- Section Tarifs -->
+    <section id="tarifs">
+        <div id="title">
+            <p>Tarifs</p>
+        </div>
+        <div id="box-tarifs">
+            <div id="box-Depart-Orly">
+                <img src="images/avion-v2.png" alt="logo-avion">
+                <div class="tableau" id="tab-dep-orly">
+                    <table>
+                        <tr>
+                            <td class="btn-tableau">
+                                <div id="en-tete-depart-Orly">
+                                    <button type="button" disabled="disabled" class="btn">
+                                        DÉPART ORLY
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="blank_row_top">
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <li>
+                                Vers Paris ~ 90€
+                            </li>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Gare du nord ~ 90€ 
+                                </li>    
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Gare de Lyon ~ 90€ 
+                                </li>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Gare d'Austerlitz ~  90€ 
+                                </li>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Gare de Saint Lazare  ~ 100€         
+                                </li>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Gare de Montparnasse  ~ 90€ 
+                                </li>
+                            </td> 
+                        </tr>                    
+                        <tr>
+                            <td>
+                                <li>
+                                    Aéroport CDG ~ 150€ 
+                                </li>
+                            </td> 
+                        </tr>
+                        <tr class="blank_row_bottom">
+                            <td colspan="3"></td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            <div id="box-Depart-CDG">
+                <img src="images/avion-v2.png" alt="logo-avion">
+                <div class="tableau" id="tab-dep-cdg">
+                    <table>
+                        <tr>
+                            <td class="btn-tableau">
+                                <div id="en-tete-depart-CDG">
+                                    <button type="button" disabled="disabled" class="btn">
+                                        DÉPART CDG<br /><p>(Roissy Charles De Gaulle)</p>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="blank_row_top">
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Paris ~ 110€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Gare du nord ~ 110€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Gare de Lyon ~ 120€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Gare d'Austerlitz ~ 120€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Gare de Saint Lazare ~ 120€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Gare de Montparnasse ~ 120€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    Vers Aéroport d’Orly ~ 150€
+                                </li>
+                            </td>
+                        </tr>
+                        <tr class="blank_row_bottom">
+                            <td colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="box-Depart-Paris">
+                <img src="images/tour-eiffel-v2.png" alt="logo-avion"> 
+                <div class="tableau" id="tab-dep-paris">
+                    <table>
+                        <tr>
+                            <td class="btn-tableau">
+                                <div id="en-tete-depart-Paris">
+                                    <button type="button" disabled="disabled" class="btn">
+                                        DÉPART PARIS
+                                    </button>
+                            </td>
+                                </div>
+                        </tr>
+                        <tr class="blank_row_top">
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td class="vide"></td>
+                        </tr>
+                        <tr>
+                            <td class="vide"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Vers Paris intra-muros ~ 55€</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Vers toutes les gares de Paris ~55€</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Vers Aéroport Orly ~ 90€</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Vers Aéroport CDG ~ 110€</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="vide"></td>
+                        </tr>
+                        <tr>
+                            <td class="vide"></td>
+                        </tr>
+                        <tr>
+                            <td class="vide"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>   
+            </div>
+        </div>
+    </section>
 
-nav img{
-    height: 3em;
-    /* justify-content: end; */
-}
+    <!-- Section Contact -->
+    <section id="contact">
+        <div id="title">
+            <p>Contact</p>
+        </div>
+        <div id="text-contact">
+            <p>Pour toute question ou demande de reservation, Je suis disponible sur mon What’sApp, Réservez dès maintenant pour vivre une expérience de transport fluide et sans stress en cliquant sur le lien de l'image.</p>
+        </div>
+        <div id="image-contact">
+            <a href="https://wa.me/+33665980525" target="_blank">
+                <img src="./images/whatsapp_vert.webp" alt="image whats'app" width="235" height="235">
+            </a>
+        </div>
+    </section>
 
-.left-nav{
-    flex: 1;
-    /* border: solid; */
-    text-align:left;
-}
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Taxi Moto Express. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-.right-nav{
-    flex: 1;
-    /* display: flex; */
-    /* border: solid; */
-    /* justify-items: end; */
-    text-align:right;
-    /* align-items: center; */
-    /* justify-content: right; */
-}
-
-.right-nav img{
-    /* float: right; */
-    /* clear: right; */
-    padding: 0% 2%;
-}
-
-.left-nav img{
-    padding-left: 2%;
-}
-
-nav a{
-    /* justify-content: end; */
-    /* border: solid; */
-}
-
-
-nav li {
-    /* This will create the spacing you saw in the skeleton */
-    /* display: inline-block; */
-  }
-
-
-/* Bannière */
-
-
-/* Sections */
-section {
-    /* padding: 60px 0; */
-    /* max-width: 1400px;
-    max-height: 700px; */
-}
-
-
-/* title */
-#title {
-    font-weight: 10;
-    font-family: catchy-mager;
-    color: #623e2a;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Section À Propos */
-#apropos {
-    background-color: #ddcebc;
-    padding: 0% 2% 3% 2%;
-    /* padding-bottom: 5%; */
-}
-
-.box {
-    /* display: inline-block; */
-    display: flex;
-    align-self: center;
-    /* border-spacing: 5px 0rem; */
-    /* display: grid; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
-    /* flex: 1; */
-    /* width: 40%; */
-    /* width: 100px;
-    height: 100px; */
-    /* border: solid; */
-    /* border-collapse: separate; */
-    /* border-spacing: 100px; */
-}
-
-#text-apropos {
-    color: #623e2a;
-    font-family: "Coco Gothic", sans-serif;
-    font-size: 20.9px;
-    text-align: justify;
-    align-self: center;
-    /* border: solid; */
-    width: 100%;
-    padding: 0% 5% 0% 2%;
-    /* border: solid; */
-    /* max-height: 1500px; */ 
-    /* margin: auto; */
-    /* line-height: 1.8; */
-    /* text-align: center; */
-}
-
-#image-apropos {
-    /* max-width: 100%;*/
-    /* border: solid; */
-    /* height: auto; */
-    width: 80%;
-    /* border: solid; */
-    align-self: center;
-    padding: 0% 0% 4% 5%;
-    /* align-items: center;
-    justify-content: center;
-    margin-left: auto; */
-}
-
-
-/* Section Tarifs */
-#tarifs {
-    background-color: #f4f1ed;
-    padding: 0 5%;
-    padding-bottom: 5%;
-}
-
-#box-tarifs{
-    display: flex;
-    /* border: solid; */
-    justify-content: space-between;
-    text-align: center;
-    flex-basis: auto;
-    align-items: flex-end;
-    /* flex-direction: column; */
-    /* flex: 1;
-    border: 1px solid #ccc;
-    margin: 5px 10px; */
-}
-
-#box-tarifs p{
-    text-align: center;
-}
-
-#box-Depart-Orly{
-    flex: 1;
-}
-
-#box-Depart-Orly img{
-    width: 50%;
-    /* padding: 5% 5% 5% 5%; */
-    text-align: center;
-}
-
-#box-Depart-CDG{
-    flex: 1;
-}
-
-#box-Depart-CDG img{
-    width: 50%;
-    /* padding: 5% 5% 5% 5%; */
-    text-align: center;
-}
-
-#box-Depart-Paris{
-    flex: 1;
-}
-
-#box-Depart-Paris img{
-    width: 50%;
-    /* padding: 5% 5% 5% 5%; */
-    text-align: center;
-}
-
-.logo-avion{
-    /*display: flex;  /* Use flexbox to position elements */
-    /*align-items: center;  /* Vertically center items */
-    /* width: 200px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 20px; */
-}
-table{
-    /* border-color: black; */
-    background: white;
-    border-radius: 5%;
-    border-style: hidden; /* hide standard table (collapsed) border */
-    /* box-shadow: 0 0 0 1px #666; this draws the table border   */
-    width: 100%;
-    /* box-sizing: content-box; */
-    /* text-align: start; */
-}
-
-.btn-tableau{
-    text-align: center;
-}
-
-.tableau{
-    /* flex: 1; */
-    flex-grow: 1;
-    /* flex: 1 1 0px; */
-    /* border: 1px solid #ccc; */
-    margin: 5px 10px;
-}
-
-td{
-    font-family: 'inter', sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    text-align: start;
-    /* box-sizing: content-box; */
-    /* width: 10%; */
-}
-
-#tarifs th, #tarifs td {
-    padding: 12px;
-}
-
-#tarifs .btn {
-    font-family: 'inter', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    border-radius: 3em;
-    background: #91713c;
-    border-color: #91713c;
-    border: none;
-    /* box-shadow: none; */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    width: 139px;
-    height: 45px;
-
-    /* border-style: outset; */
-}
-
-#tarifs .btn p{
-    font-size: 8px;
-}
-
-/* contact */
-#contact {
-    background-color: #ddcebc;
-}
-
-#text-contact {
-    color: #623e2a;
-    font-family: "Coco Gothic", sans-serif;
-    font-size: 20.9px;
-    /* text-align: justify; */
-    align-self: center;
-    /* border: solid; */
-    width: 100%;
-    padding: 0% 7% 0% 7%;
-    /* border: solid; */
-    /* max-height: 1500px; */ 
-    /* margin: auto; */
-    /* line-height: 1.8; */
-    /* text-align: center; */
-        
-}
-
-#image-contact {
-    width: 100%;
-    text-align: center;
-}
-
-
-/* Pied de page */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.8% 0;
-}
-
-/* Styles Responsives */
-@media (max-width: 1124px) {
-    #text-apropos {
-        align-self: none;
-    }
-    #image-apropos {
-        /* border: solid; */
-        align-self: center;
-        /* align-items: center;
-        justify-content: center;
-        margin-left: auto; */
-    }
-}
-
-@media (max-width: 768px)
-{
-    .box {
-        /* display: initial; */
-        flex-direction: column;
-        /* margin: ; */
-        /* border: solid; */
-    }
-
-    #image-apropos {
-        /* border: solid; */
-        margin-top: 10%;
-        /* padding-top: 15%; */
-    }
-
-}
-
-@media (max-width: 940px) {
-    #box-tarifs{
-        /* display: contents; */
-        display: grid;
-        flex-direction: column;
-        border: solid;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    .vide{
-        display:none;
-    }
-    
-    #box-Depart-Orly{
-        /* border: solid; */
-        /* display: contents; */
-
-    }
-
-    #box-Depart-CDG img{
-        /* border: solid; */
-        padding-top: 5%;
-        /* display: contents; */
-
-    }
-
-    #box-Depart-Paris img{
-        /* border: solid; */
-        padding-top: 10%;
-        padding-bottom: 3%;
-        /* display: contents; */
-
-    }
-
-
-}
+</body>
+</html>
