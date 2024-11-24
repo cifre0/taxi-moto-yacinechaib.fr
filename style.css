@@ -20,6 +20,7 @@ body {
 /* En-tête */
 nav{
     /* border: solid; */
+    /* background-color: #f4f1ed; */
     display: flex;
     padding-left: 16px;
     padding-right: 16px;
@@ -99,19 +100,6 @@ section {
 }
 
 /* Section À Propos */
-@media (max-width: 1124px) {
-    #text-apropos {
-        align-self: none;
-    }
-    #image-apropos {
-        /* border: solid; */
-        align-self: center;
-        /* align-items: center;
-        justify-content: center;
-        margin-left: auto; */
-    }
-}
-
 #apropos {
     background-color: #ddcebc;
     padding: 0% 2% 3% 2%;
@@ -322,6 +310,19 @@ footer {
 }
 
 /* Styles Responsives */
+@media (max-width: 1124px) {
+    #text-apropos {
+        align-self: none;
+    }
+    #image-apropos {
+        /* border: solid; */
+        align-self: center;
+        /* align-items: center;
+        justify-content: center;
+        margin-left: auto; */
+    }
+}
+
 @media (max-width: 768px)
 {
     .box {
@@ -329,6 +330,10 @@ footer {
         flex-direction: column;
         /* margin: ; */
         /* border: solid; */
+    }
+
+    .vide{
+        display:none;
     }
 
     #image-apropos {
@@ -371,5 +376,3 @@ footer {
 
 
 }
-
-
