@@ -226,6 +226,20 @@ table{
     /* text-align: start; */
 }
 
+.majoration{
+    font-style: italic;
+    font-size: 1pc;
+    border-radius: 0%;
+    background-color: #f4f1ed;
+
+}
+
+.majoration li{
+    padding-left: 3%;
+}
+
+
+
 .btn-tableau{
     text-align: center;
 }
@@ -345,7 +359,7 @@ footer {
         /* display: contents; */
         display: grid;
         flex-direction: column;
-        border: solid;
+        /* border: solid; */
         justify-items: center;
         justify-content: center;
     }
