@@ -1,0 +1,375 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* En-tête */
+nav{
+    /* border: solid; */
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px 30px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out; */
+}
+
+nav img{
+    height: 3em;
+    /* justify-content: end; */
+}
+
+.left-nav{
+    flex: 1;
+    /* border: solid; */
+    text-align:left;
+}
+
+.right-nav{
+    flex: 1;
+    /* display: flex; */
+    /* border: solid; */
+    /* justify-items: end; */
+    text-align:right;
+    /* align-items: center; */
+    /* justify-content: right; */
+}
+
+.right-nav img{
+    /* float: right; */
+    /* clear: right; */
+    padding: 0% 2%;
+}
+
+.left-nav img{
+    padding-left: 2%;
+}
+
+nav a{
+    /* justify-content: end; */
+    /* border: solid; */
+}
+
+
+nav li {
+    /* This will create the spacing you saw in the skeleton */
+    /* display: inline-block; */
+  }
+
+
+/* Bannière */
+
+
+/* Sections */
+section {
+    /* padding: 60px 0; */
+    /* max-width: 1400px;
+    max-height: 700px; */
+}
+
+
+/* title */
+#title {
+    font-weight: 10;
+    font-family: catchy-mager;
+    color: #623e2a;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Section À Propos */
+@media (max-width: 1124px) {
+    #text-apropos {
+        align-self: none;
+    }
+    #image-apropos {
+        /* border: solid; */
+        align-self: center;
+        /* align-items: center;
+        justify-content: center;
+        margin-left: auto; */
+    }
+}
+
+#apropos {
+    background-color: #ddcebc;
+    padding: 0% 2% 3% 2%;
+    /* padding-bottom: 5%; */
+}
+
+.box {
+    /* display: inline-block; */
+    display: flex;
+    align-self: center;
+    /* border-spacing: 5px 0rem; */
+    /* display: grid; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* flex: 1; */
+    /* width: 40%; */
+    /* width: 100px;
+    height: 100px; */
+    /* border: solid; */
+    /* border-collapse: separate; */
+    /* border-spacing: 100px; */
+}
+
+#text-apropos {
+    color: #623e2a;
+    font-family: "Coco Gothic", sans-serif;
+    font-size: 20.9px;
+    text-align: justify;
+    align-self: center;
+    /* border: solid; */
+    width: 100%;
+    padding: 0% 5% 0% 2%;
+    /* border: solid; */
+    /* max-height: 1500px; */ 
+    /* margin: auto; */
+    /* line-height: 1.8; */
+    /* text-align: center; */
+}
+
+#image-apropos {
+    /* max-width: 100%;*/
+    /* border: solid; */
+    /* height: auto; */
+    width: 80%;
+    /* border: solid; */
+    align-self: center;
+    padding: 0% 0% 4% 5%;
+    /* align-items: center;
+    justify-content: center;
+    margin-left: auto; */
+}
+
+
+/* Section Tarifs */
+#tarifs {
+    background-color: #f4f1ed;
+    padding: 0 5%;
+    padding-bottom: 5%;
+}
+
+#box-tarifs{
+    display: flex;
+    /* border: solid; */
+    justify-content: space-between;
+    text-align: center;
+    flex-basis: auto;
+    align-items: flex-end;
+    /* flex-direction: column; */
+    /* flex: 1;
+    border: 1px solid #ccc;
+    margin: 5px 10px; */
+}
+
+#box-tarifs p{
+    text-align: center;
+}
+
+#box-Depart-Orly{
+    flex: 1;
+}
+
+#box-Depart-Orly img{
+    width: 50%;
+    /* padding: 5% 5% 5% 5%; */
+    text-align: center;
+}
+
+#box-Depart-CDG{
+    flex: 1;
+}
+
+#box-Depart-CDG img{
+    width: 50%;
+    /* padding: 5% 5% 5% 5%; */
+    text-align: center;
+}
+
+#box-Depart-Paris{
+    flex: 1;
+}
+
+#box-Depart-Paris img{
+    width: 50%;
+    /* padding: 5% 5% 5% 5%; */
+    text-align: center;
+}
+
+.logo-avion{
+    /*display: flex;  /* Use flexbox to position elements */
+    /*align-items: center;  /* Vertically center items */
+    /* width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px; */
+}
+table{
+    /* border-color: black; */
+    background: white;
+    border-radius: 5%;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    /* box-shadow: 0 0 0 1px #666; this draws the table border   */
+    width: 100%;
+    /* box-sizing: content-box; */
+    /* text-align: start; */
+}
+
+.btn-tableau{
+    text-align: center;
+}
+
+.tableau{
+    /* flex: 1; */
+    flex-grow: 1;
+    /* flex: 1 1 0px; */
+    /* border: 1px solid #ccc; */
+    margin: 5px 10px;
+}
+
+td{
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: start;
+    /* box-sizing: content-box; */
+    /* width: 10%; */
+}
+
+#tarifs th, #tarifs td {
+    padding: 12px;
+}
+
+#tarifs .btn {
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 3em;
+    background: #91713c;
+    border-color: #91713c;
+    border: none;
+    /* box-shadow: none; */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 139px;
+    height: 45px;
+
+    /* border-style: outset; */
+}
+
+#tarifs .btn p{
+    font-size: 8px;
+}
+
+/* contact */
+#contact {
+    background-color: #ddcebc;
+}
+
+#text-contact {
+    color: #623e2a;
+    font-family: "Coco Gothic", sans-serif;
+    font-size: 20.9px;
+    /* text-align: justify; */
+    align-self: center;
+    /* border: solid; */
+    width: 100%;
+    padding: 0% 7% 0% 7%;
+    /* border: solid; */
+    /* max-height: 1500px; */ 
+    /* margin: auto; */
+    /* line-height: 1.8; */
+    /* text-align: center; */
+        
+}
+
+#image-contact {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.8% 0;
+}
+
+/* Styles Responsives */
+@media (max-width: 768px)
+{
+    .box {
+        /* display: initial; */
+        flex-direction: column;
+        /* margin: ; */
+        /* border: solid; */
+    }
+
+    #image-apropos {
+        /* border: solid; */
+        margin-top: 10%;
+        /* padding-top: 15%; */
+    }
+
+}
+
+@media (max-width: 940px) {
+    #box-tarifs{
+        /* display: contents; */
+        flex-direction: column;
+        /* border: solid; */
+
+        /* justify-content: center; */
+    }
+    
+    #box-Depart-Orly{
+        /* border: solid; */
+        /* display: contents; */
+
+    }
+
+    #box-Depart-CDG img{
+        /* border: solid; */
+        padding-top: 5%;
+        /* display: contents; */
+
+    }
+
+    #box-Depart-Paris img{
+        /* border: solid; */
+        padding-top: 10%;
+        padding-bottom: 3%;
+        /* display: contents; */
+
+    }
+
+
+}
+
+
