@@ -323,6 +323,13 @@ footer {
     padding: 0.8% 0;
 }
 
+#image-contact img{
+    /* width: 235px; */
+    /* height: 235px; */
+    width: 20%;
+
+}
+
 /* Styles Responsives */
 @media (max-width: 1124px) {
     #text-apropos {
@@ -351,6 +358,8 @@ footer {
         margin-top: 10%;
         /* padding-top: 15%; */
     }
+
+
 
 }
 
@@ -391,3 +400,5 @@ footer {
 
 
 }
+
+
