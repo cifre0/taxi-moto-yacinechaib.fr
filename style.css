@@ -328,7 +328,17 @@ footer {
     /* height: 235px; */
     margin-top: 10%;
     width: 20%;
+    display: flex;
 
+}
+
+#contact-img-whatsapp{
+    flex: 1;
+    margin-right: 10%;
+}
+
+#contact-img-tel{
+    flex: 1;
 }
 
 /* Styles Responsives */
