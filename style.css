@@ -312,6 +312,25 @@ td{
 #image-contact {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#image-contact img{
+    /* width: 235px; */
+    /* height: 235px; */
+    margin-top: 10%;
+    width: 20%;
+
+}
+
+#contact-img-whatsapp{
+/*     flex: 1; */
+    /* margin-right: 10%; */ 
+}
+
+#contact-img-tel{
+/*    flex: 1;*/
 }
 
 
@@ -323,25 +342,6 @@ footer {
     padding: 0.8% 0;
 }
 
-#image-contact img{
-    /* width: 235px; */
-    /* height: 235px; */
-    margin-top: 10%;
-    width: 20%;
-
-}
-#image-contact{
-/*     display: flex; */
-}
-
-#contact-img-whatsapp{
-/*     flex: 1; */
-    /* margin-right: 10%; */ 
-}
-
-#contact-img-tel{
-/*    flex: 1;*/
-}
 
 /* Styles Responsives */
 @media (max-width: 1124px) {
