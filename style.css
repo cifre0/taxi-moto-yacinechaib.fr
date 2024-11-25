@@ -312,8 +312,7 @@ td{
 #image-contact {
     width: 100%;
     text-align: center;
-    display: flex;
-    justify-content: center;
+
 }
 
 #image-contact img{
@@ -321,12 +320,13 @@ td{
     /* height: 235px; */
     margin-top: 10%;
     width: 20%;
-
+    margin-bottom: 7%;
 }
 
-#contact-img-whatsapp{
+#contact-img-whatsapp img{
 /*     flex: 1; */
-    /* margin-right: 10%; */ 
+    margin-right: 7%; 
+
 }
 
 #contact-img-tel{
@@ -413,5 +413,3 @@ footer {
 
 
 }
-
-
